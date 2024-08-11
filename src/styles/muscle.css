@@ -1,0 +1,146 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: rgb(17, 144, 138);
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.photo {
+    flex: 1;
+    text-align: right;
+    border-style: outset;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 1rem;
+        height: auto; /* Adjust height to auto for better scaling */
+    }
+
+    .hero-content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+        text-align: center; /* Center-align text */
+    }
+
+    .title {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .title h2 {
+        font-size: 2.5rem; /* Reduce font size */
+        margin-bottom: 1rem;
+    }
+
+    .title p {
+        font-size: 1rem; /* Adjust font size */
+        margin-bottom: 1rem;
+        line-height: 1.4; /* Adjust line height for better readability */
+    }
+
+    .photo {
+        text-align: center;
+        margin-top: 20px;
+        border-style: none; /* Remove border styling on mobile */
+    }
+
+    .photo img {
+        width: 100%; /* Ensure image scales properly */
+        height: auto;
+    }
+}
+
+.featured {
+    padding: 2rem 40px;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.featured h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
+    text-align: left;
+    border-bottom: 2px solid lightgray;
+}
+
+.featured a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .featured h2 {
+        font-size: 1.8rem; /* Adjust heading size */
+        text-align: center;
+    }
+
+    .featured {
+        padding: 1rem 20px; /* Reduce padding */
+    }
+
+    .list-wrapper {
+        padding-left: 10px;
+    }
+
+    .list {
+        gap: 10px; /* Reduce gap between items */
+        padding: 10px;
+    }
+
+    .item {
+        width: 200px;
+        height: 200px;
+    }
+
+    .food-and-nutrition .photo2 img,
+    .recipes .photo3 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .description {
+        padding: 10px;
+        max-width: 100%;
+        font-size: 0.9rem; /* Adjust text size */
+    }
+
+    .header-section h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
